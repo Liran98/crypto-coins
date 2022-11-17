@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Form from 'react-bootstrap/Form';
 
+import { Card ,Col , Row} from 'react-bootstrap';  
+
 
 function Crypto() {
 const [currncey,setcurrnecy] = useState([]);
@@ -33,7 +35,7 @@ const coinSearch =  currncey.filter(CoinName => {
 
 
   return (
-    <div>
+    <div className='cryptoCard'>
     <form>
       <Form.Control autoCorrect="false" placeholder='Search...' type="text"  onChange={handleChange} />
     </form>
@@ -41,9 +43,15 @@ const coinSearch =  currncey.filter(CoinName => {
 return(
 
     <div key={item.id}   id={item.id} className='note'>
-    <h1>{item.name}</h1>
-    <p>{item.symbol}</p>
-    <img src={item.image.small}   alt="img" />
+    <Row>
+    <Card className='customCard'>
+ 
+    <Col><h1>{item.name}</h1></Col>
+    <Col><img src={item.image.small}   alt="img" /></Col>
+    <Col><p>{item.symbol}</p></Col>
+  
+    </Card>
+    </Row>
     </div>
     
 )

@@ -33,7 +33,7 @@ function Livereports() {
 
       {liveReport.map((item) => {
         return (
-          <div key={item.id} className='liveTable'>
+          <div key={item.id}>
             <Coin
               id={item.id}
               name={item.name}
@@ -43,7 +43,6 @@ function Livereports() {
               priceChange={item.market_data.price_change_24h.toFixed(2)}
               percent={item.market_data.price_change_percentage_24h.toFixed(2)}
               market={item.market_data.market_cap.usd.toLocaleString()}
-
             />
 
           </div>

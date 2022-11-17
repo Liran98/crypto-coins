@@ -2,14 +2,14 @@
 
 
 header {
-  background-color: #201333;
+  background-color: #06041c;
   padding: 16px 32px;
   box-shadow: 20px 20px 20px #0000008c;
+
 }
 
 header h1 {
   color: rgb(195, 183, 183);
-  
   font-weight: 200;
 }
 
@@ -26,32 +26,34 @@ footer p {
 }
 
 .note {
-  background-color: #06041c;
-  width: 240px;
-  display: inline-block;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 3%;
-  margin-left: 60px;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  box-shadow: 20px 20px 20px #0000008c;
+   display: inline-block;
+  width: 150px;
+height: auto;
+padding:3% ;
   border-radius: 10px;
-  position: relative;
-  overflow: hidden;
+  margin: 3%;
+ 
 }
+.customCard{
+  background-color: #06041c !important;
+  box-shadow: 20px 20px 20px #0000008c;
+}
+.cryptoCard{
+  text-align: center;
+  padding: 3%;
+
+}
+
 
 .note h1 {
   font-family: 'Rajdhani', sans-serif;
   color: #d0b8f5;
-  font-size: 1.6em;
-  margin-bottom: 6px;
+  font-size: 1.2em;
 }
 
 .note p {
   font-size: 1.3em;
-  font-family: 'Acme', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -60,39 +62,45 @@ footer p {
   padding: 3% 5%;
 }
 
-
-
-
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+.note img {
+width: 30px;
 }
 
-li {
-  display: inline;
 
+.headerNav{
+  position: sticky;
+top: 0;
+z-index: 100;
 }
-
 .nav {
-  text-decoration: none;
+  font-family: 'Prompt', sans-serif;
+float: left;
   color: #6561a0;
   margin: 25px;
   margin-top: 0px;
   padding: 9px;
-float: right;
+
+
+}
+
+
+
+
+.arrowup{
+  cursor: pointer;
+  color: #6561a0;
 }
 .nav:hover{
   color: #ffffff;
-  text-decoration: none;
+}
+
+.arrowup:hover{
+  color: #ffffff;
+
 }
 
 
-
 .homepageimg {
-
 overflow: hidden;
 width: 100%;
 height: 100%;
@@ -113,25 +121,17 @@ html {
   margin-right: 30px;
   margin-top: 30px;
   color: #fff;
+  font-size: 12px;
   font-family: 'Prompt', sans-serif;
-  text-align: center;
-
-}
-.liveTable {
-color: #06041c;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: 2px;
-  color: #fff;
-  font-family: 'Prompt', sans-serif;
-  text-align: center;
+text-align: center;
+background-color: #06041c;
 }
 
-.liveTable:nth-child(even) {background-color: #06041c;}
 
-.liveTable:hover{
+
+/* .liveTable:hover{
   background-color: rgb(7, 7, 7);
-}
+}  */
 
 
 
@@ -146,7 +146,10 @@ color: #06041c;
 .form-control {
   margin: 2% 30%;
   margin-top: 30px;
-  width: 30% !important;
+  width: 50% !important;
   box-shadow: 20px 20px 20px #0000008c;
   
 }
+
+
+
