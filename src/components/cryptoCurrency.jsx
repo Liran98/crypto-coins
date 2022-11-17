@@ -7,7 +7,7 @@ function cryptoCurrency(props) {
     const priceChanging = props.priceChange;
     const Dprice = props.price;
 
-
+//1234
     return (
         <div >
             <Row>
