@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Form from 'react-bootstrap/Form';
-
 import { Card ,Col , Row} from 'react-bootstrap';  
 
 
@@ -45,12 +44,10 @@ return(
     <div key={item.id}   id={item.id} className='note'>
     <Row>
     <Card className='customCard'>
- 
     <Col><h1>{item.name}</h1></Col>
     <Col><img src={item.image.small}   alt="img" /></Col>
     <Col><p>{item.symbol}</p></Col>
-  
-    </Card>
+   </Card>
     </Row>
     </div>
     
