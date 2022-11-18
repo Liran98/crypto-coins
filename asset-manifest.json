@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/crypto-coins/static/css/main.c59cc657.css",
+    "main.js": "/crypto-coins/static/js/main.424daaa3.js",
+    "static/media/homepage.jpg": "/crypto-coins/static/media/homepage.a6e3cc15d9af8d2124bb.jpg",
+    "index.html": "/crypto-coins/index.html",
+    "main.c59cc657.css.map": "/crypto-coins/static/css/main.c59cc657.css.map",
+    "main.424daaa3.js.map": "/crypto-coins/static/js/main.424daaa3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c59cc657.css",
+    "static/js/main.424daaa3.js"
+  ]
+}
