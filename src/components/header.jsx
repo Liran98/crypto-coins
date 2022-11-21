@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import LiveReports from './Livereports';
 import Crypto from './crypto';
-import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Link, Switch, Route , Redirect } from 'react-router-dom';
 import homepage from '../assets/homepage.jpg';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -37,12 +37,13 @@ function Header() {
           <img src={homepage} alt='homepage' className='homepageimg ' />
         </Route>
 
-        <Route path="/Crypto">
+        <Route exact path="/Crypto">
           <Crypto />
         </Route>
-        <Route path="/reports">
+        <Route exact path="/reports">
           <LiveReports />
         </Route>
+<Redirect to ='/'/>
       </Switch>
     </BrowserRouter>
   );

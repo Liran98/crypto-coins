@@ -29,6 +29,7 @@ setSearch(event.target.value);
 const coinSearch =  currncey.filter(CoinName => {
   return (
   CoinName.name.toLowerCase().includes(search.toLowerCase())
+  
 )
 });
 
